@@ -1,0 +1,27 @@
+,dtype,n_missing,pct_missing,n_unique
+airport_alert_id,float64,450472,88.838,769
+is_last_lightning_cloud_ground,boolean,450472,88.838,2
+lightning_id,int64,0,0.0,507071
+year,int32,0,0.0,7
+x_rel,float64,0,0.0,505310
+dist_band,category,0,0.0,4
+is_ic,int64,0,0.0,2
+is_cg,int64,0,0.0,2
+season,category,0,0.0,4
+dayofyear,int32,0,0.0,352
+minute,int32,0,0.0,60
+hour,int32,0,0.0,24
+day,int32,0,0.0,31
+month,int32,0,0.0,12
+in_alert_zone,bool,0,0.0,2
+lightning_airport_id,int64,0,0.0,156718
+airport,category,0,0.0,5
+azimuth,float64,0,0.0,502666
+dist,float64,0,0.0,504404
+icloud,boolean,0,0.0,2
+maxis,float64,0,0.0,7587
+amplitude,float64,0,0.0,17080
+lat,float64,0,0.0,26779
+lon,float64,0,0.0,32954
+date,"datetime64[ns, UTC]",0,0.0,394839
+y_rel,float64,0,0.0,505326

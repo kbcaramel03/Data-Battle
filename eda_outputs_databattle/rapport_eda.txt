@@ -1,0 +1,28 @@
+Nombre total de lignes: 507071
+Nombre total d'aéroports: 5
+Part de lignes avec alert_id (zone 20 km): 0.1116
+Nombre total d'alertes: 2627
+Taille médiane des alertes: 3.00
+Durée médiane des alertes (min): 8.92
+Alertes avec exactement 1 True: 2627
+Alertes avec 0 True: 0
+Alertes avec >1 True: 0
+Top features univariées (différence de moyenne absolue) :
+  - cnt_all_30min: mean(target=0)=520.2087, mean(target=1)=41.4477, diff=-478.7611
+  - cnt_all_20min: mean(target=0)=374.3579, mean(target=1)=26.5040, diff=-347.8539
+  - cnt_lt20_30min: mean(target=0)=293.0605, mean(target=1)=18.5398, diff=-274.5207
+  - cnt_lt20_20min: mean(target=0)=217.3884, mean(target=1)=11.5660, diff=-205.8223
+  - cnt_20_30_30min: mean(target=0)=227.1483, mean(target=1)=22.9079, diff=-204.2404
+  - cnt_all_10min: mean(target=0)=200.6244, mean(target=1)=12.9494, diff=-187.6751
+  - cnt_20_30_20min: mean(target=0)=156.9695, mean(target=1)=14.9380, diff=-142.0316
+  - cnt_cg_30min: mean(target=0)=134.8095, mean(target=1)=12.1336, diff=-122.6759
+  - cnt_lt20_10min: mean(target=0)=120.3241, mean(target=1)=5.7031, diff=-114.6210
+  - cnt_all_5min: mean(target=0)=103.3803, mean(target=1)=6.6190, diff=-96.7613
+
+Recommandations stratégiques provisoires :
+1. Ne superviser que sur les lignes avec airport_alert_id non nul.
+2. Utiliser tous les éclairs du même aéroport pour fabriquer les features historiques.
+3. Séparer explicitement le signal 0-20 km et 20-30 km.
+4. Faire la validation par années, jamais en aléatoire.
+5. Tester un modèle global avec airport + saison + historique récent.
+6. Tester la robustesse avec et sans Pise 2016 pour les features liées à icloud.
