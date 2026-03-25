@@ -1,1 +1,6 @@
-catboost
+xgboost
+pandas
+scikit-learn
+numpy
+matplotlib
+pathlib
